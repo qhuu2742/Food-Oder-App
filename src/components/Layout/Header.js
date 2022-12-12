@@ -1,11 +1,11 @@
-import React, { Fragment } from "react";
+import React from "react";
 import mealsImage from "../../assets/meals.jpg";
 import styles from "./Header.module.css";
 import HeaderCartButton from "./HeaderCartButton";
 
 const Header = (props) => {
   return (
-    <Fragment>
+    <>
       <header className={styles.header}>
         <h1>ReactMeals</h1>
         <HeaderCartButton />
@@ -13,7 +13,7 @@ const Header = (props) => {
       <div className={styles["main-image"]}>
         <img src={mealsImage} alt="This is a meal!" />
       </div>
-    </Fragment>
+    </>
   );
 };
 
